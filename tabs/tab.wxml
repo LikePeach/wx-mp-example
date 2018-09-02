@@ -1,0 +1,8 @@
+<view class='tab'>
+  <view
+    wx:for="{{tabs}}"
+    class="tab_item {{tabIndex == index ? 'active':''}}"
+    wx:key="{{index}}"
+    bindtap="changeTab"
+    id="{{index}}" >{{item}}</view>
+</view>
